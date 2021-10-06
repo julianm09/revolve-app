@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { Spotify, Star } from "react-feather";
 import Sound from 'react-sound'
+import Button from "@/comps/MainButton";
 
 const Cont = styled.div`
   display:flex;
@@ -123,6 +124,13 @@ const StarCont = styled.div`
   flex-direction:row;
 `;
 
+const ButtonCont = styled.div`
+  display:flex;
+  flex-direction:row;
+  margin-top:40px;
+  justify-content:space-between;
+`
+
 
 const NowPlaying = ({
   albumsrc="../whats-going-on.png",
@@ -174,6 +182,11 @@ const NowPlaying = ({
           </IconCont>
         </Right>
       </BottomCont>
+      <ButtonCont className="buttons">
+        <Button backgroundColor="white" color="black" buttonText="filter by genre"/>
+        <Button color="white" buttonText="shuffle"/>
+        <Button backgroundColor="white" color="black" buttonText="checklist"/>
+      </ButtonCont>
     </Cont>
   );
 }

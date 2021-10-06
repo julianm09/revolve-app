@@ -21,5 +21,6 @@ export default function Home() {
     <NowPlaying />
   </Main>
     
+
   );
 }
