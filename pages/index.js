@@ -3,14 +3,8 @@ import Image from "next/image";
 import styled from "styled-components";
 import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
-import Button from "@/comps/MainButton";
 import NowPlaying from "@/comps/NowPlaying";
 
-
-
-
-  return (
-    <></>
 
 const Main = styled.div`
   display:flex;
