@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import React from "react";
 
-const Button = styled.div`
+const ButtonUI = styled.div`
 
     display: flex;
     justify-content: center;
@@ -16,19 +16,21 @@ const Button = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 
-    color: ${props=>props.txtCol};
-    background-color: ${props=>props.btnCol};
+    color: ${props=>props.color};
+    background-color: ${props=>props.backgroundColor};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
-export default function ButtonUI(
-    txtCol='black',
-    btnCol='black',
-    btnText='default'
-){
+export const Button = ({
+    color='black',
+    backgroundColor='black',
+    buttonText='default'
+}) => {
     return (
-        <Button>
-            {btnText}
-        </Button>
+        <ButtonUI color={color} backgroundColor={backgroundColor}>
+            {buttonText}
+        </ButtonUI>
     )
 }
+
+export default Button;
