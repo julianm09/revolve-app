@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
@@ -18,4 +21,143 @@ a {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 769px) {
+
+  .main {
+    justify-content:center;
+    align-items:center;
+  }
+
+  .now-playing {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .left {
+    flex:2;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+
+  .album {
+    width:30vw;
+    min-width:170px;
+    max-width:370px;
+    max-height:370px;
+  }
+
+  .record {
+    width:30vw;
+    min-width:170px;
+    max-width:370px;
+    max-height:370px;
+    left:-15vw;
+  }
+
+  .star-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:100%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+  .main {
+    padding-top: 5vh;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .now-playing {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .left {
+    flex:1;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom: 5vh;
+  }
+
+  .album {
+    width:30vw;
+    min-width:170px;
+    max-width:200px;
+    max-height:200px;
+  }
+
+  .record {
+    width:30vw;
+    min-width:170px;
+    max-width:200px;
+    max-height:200px;
+    left:-15vw;
+  }
+
+  .star-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:50%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+
+  .main {
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .now-playing {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .left {
+    flex:1;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom: 5vh;
+  }
+
+  .album {
+    width:100%;
+    min-width:170px;
+    max-width:370px;
+    max-height:370px;
+  }
+
+  .record {
+    width:100%;
+    min-width:170px;
+    max-width:370px;
+    max-height:370px;
+    left:-20vw;
+  }
+
+  .star-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:100%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
