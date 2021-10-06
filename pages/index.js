@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
+import TrackLoop from "@/comps/TrackLoop";
 
 
 const Main = styled.div`
@@ -18,6 +19,7 @@ const Main = styled.div`
 export default function Home() {
 
   return ( <Main className="main">
+    <TrackLoop/>
     <NowPlaying />
   </Main>
     
