@@ -2,7 +2,7 @@ export const albums = [
   {
     name: "What's Going On",
     artist: "Marvin Gaye",
-    image: "/whats-soing-on.png",
+    image: "/whats-going-on.png",
     rating: "5",
     spotify: "https://open.spotify.com/album/2v6ANhWhZBUKkg6pJJBs3B?si=_SPrU_43TtqwL7ZBn5G9Eg&dl_branch=1",
     apple: "https://music.apple.com/us/album/whats-going-on/1538081586",
@@ -57,7 +57,7 @@ export const albums = [
   {
     name: "Nevermind",
     artist: "Nirvana",
-    image: "/nevrmind.png",
+    image: "/nevermind.png",
     rating: "5",
     spotify: "https://open.spotify.com/album/2guirTSEqLizK7j9i1MTTZ?si=uVQT_LQ4Rq2wVJO8SUJcpw&dl_branch=1",
     apple: "https://music.apple.com/us/album/nevermind/1440783617",
