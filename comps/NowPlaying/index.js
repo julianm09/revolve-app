@@ -72,6 +72,7 @@ const RecordCont = styled.div`
   z-index:1;
   position:relative;
   overflow:hidden;
+  background-color:blue;
 `;
 
 const Record = styled.img`

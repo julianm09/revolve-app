@@ -23,9 +23,9 @@ const ContainerUI = styled.div`
 `;
 
 const GridUI = styled.div`
-  width: 50%;
+  width: 70%;
   min-height: 100px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   grid-gap: 50px;
 `;
