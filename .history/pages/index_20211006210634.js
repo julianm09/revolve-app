@@ -5,8 +5,6 @@ import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
 import TrackLoop from "@/comps/TrackLoop";
-import { useRouter } from 'next/router';
-import Logo from "@/comps/Header";
 
 
 const Main = styled.div`
@@ -16,15 +14,21 @@ const Main = styled.div`
   width:100vw;
   height:100vh;
 `
+const Logo = styled.img`
+position:absolute;
+left:0;
+top:10px;
+z-index:2;
+width:100px;
+height:auto;
+`;
 
 
 export default function Home() {
-  const router = useRouter();
-
 
   return ( <Main className="main">
-    <Logo display='hidden' onClick={() => router.push('/')}/>
-    {/* <TrackLoop/> */}
+    <Logo src="/logo.svg"/>
+    <TrackLoop/>
     <NowPlaying />
   </Main>
     

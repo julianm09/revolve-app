@@ -5,8 +5,6 @@ import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
 import TrackLoop from "@/comps/TrackLoop";
-import { useRouter } from 'next/router';
-import Logo from "@/comps/Header";
 
 
 const Main = styled.div`
@@ -18,13 +16,11 @@ const Main = styled.div`
 `
 
 
-export default function Home() {
-  const router = useRouter();
 
+export default function Home() {
 
   return ( <Main className="main">
-    <Logo display='hidden' onClick={() => router.push('/')}/>
-    {/* <TrackLoop/> */}
+    <TrackLoop/>
     <NowPlaying />
   </Main>
     

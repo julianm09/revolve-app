@@ -6,7 +6,7 @@ import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
 import TrackLoop from "@/comps/TrackLoop";
 import { useRouter } from 'next/router';
-import Logo from "@/comps/Header";
+
 
 
 const Main = styled.div`
@@ -16,6 +16,10 @@ const Main = styled.div`
   width:100vw;
   height:100vh;
 `
+const Logo = styled.img`
+
+`;
+
 
 
 export default function Home() {
@@ -23,8 +27,8 @@ export default function Home() {
 
 
   return ( <Main className="main">
-    <Logo display='hidden' onClick={() => router.push('/')}/>
-    {/* <TrackLoop/> */}
+    <Logo onClick={() => router.push('/checklist')}/>
+    <TrackLoop/>
     <NowPlaying />
   </Main>
     

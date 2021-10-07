@@ -6,7 +6,7 @@ import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
 import TrackLoop from "@/comps/TrackLoop";
 import { useRouter } from 'next/router';
-import Logo from "@/comps/Header";
+import Logo from "@/comps/Logo";
 
 
 const Main = styled.div`
