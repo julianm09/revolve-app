@@ -5,12 +5,34 @@ import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
 import TracklistUI from "@/comps/Tracklist";
+import TrackLoop from "@/comps/TrackLoop";
+import { useRouter } from 'next/router';
+import Logo from "@/comps/Header";
+
+
+const Main = styled.div`
+  display:flex;
+  flex-direction:column;
+  background:linear-gradient(248.52deg, #BAA148 4.79%, #A68778 42.94%, #36444B 93.48%);
+  width:100vw;
+  height:100vh;
+`
+
+
 
 export default function Home() {
+  const router = useRouter();
 
-  return (
-    <>
-  <TracklistUI/>
-    </>
+
+
+
+  return ( <Main className="main">
+    <Logo display='hidden' onClick={() => router.push('/')}/>
+    {/* <TrackLoop/> */}
+    <NowPlaying />
+  </Main>
+    
+
+
   );
 }

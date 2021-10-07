@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import { albums } from "@/data/albums";
+import GenreButton from "@/comps/GenreButton";
 
 const ContainerUI = styled.div`
   width: 100%;
@@ -18,6 +19,14 @@ const TopUI = styled.div`
   display: flex;
   flex-direction: column;
   margin: 100px 0;
+  justify-content: center;
+  align-items: center;
+`;
+
+const FilterUI = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 50px 0;
   justify-content: center;
   align-items: center;
 `;
@@ -75,7 +84,16 @@ export default function AlbumList() {
         </NumberUI>
       </TopUI>
 
-      <AlbumGrid />
+      <FilterUI>
+      <GenreButton genre={genre} setGenre={setGenre} text="all" />
+        <GenreButton genre={genre} setGenre={setGenre} />
+        <GenreButton genre={genre} setGenre={setGenre} text="folk" />
+        <GenreButton genre={genre} setGenre={setGenre} text="soul" />
+        <GenreButton genre={genre} setGenre={setGenre} text="pop" />
+        
+      </FilterUI>
+
+      <AlbumGrid genre={genre} />
     </ContainerUI>
   );
 }

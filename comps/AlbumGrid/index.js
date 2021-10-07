@@ -23,9 +23,9 @@ const ContainerUI = styled.div`
 `;
 
 const GridUI = styled.div`
-  width: 50%;
+  width: 70%;
   min-height: 100px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   grid-gap: 50px;
 `;
@@ -63,15 +63,24 @@ const ReviewUI = styled.div`
 `;
 
 
-export default function AlbumGrid() {
+export default function AlbumGrid({genre}) {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
 
+  const filterAlbums = () => {
+    if(genre == "all"){
+      return albums
+    } else {
+    return albums.filter(album => album.genre == genre)
+
+    }
+  }
+
   return (
     <ContainerUI>
       <GridUI>
-        {albums.map((album) => {
+        {filterAlbums().map((album) => {
           return (
             <AlbumUI>
               <AlbumImageUI width="100%" src={album.image} style={{filter: album.listened ? "grayscale(0)" : "grayscale(100)"}} />
