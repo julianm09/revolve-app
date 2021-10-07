@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import AlbumGrid from "@/comps/AlbumGrid";
 import NowPlaying from "@/comps/NowPlaying";
+import TracklistUI from "@/comps/Tracklist";
 import TrackLoop from "@/comps/TrackLoop";
 import { useRouter } from 'next/router';
 import Logo from "@/comps/Header";
@@ -16,6 +17,7 @@ const Main = styled.div`
   width:100vw;
   height:100vh;
 `
+
 
 
 export default function Home() {
