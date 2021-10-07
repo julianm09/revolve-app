@@ -8,6 +8,7 @@ import Button from "@/comps/MainButton";
 import { useRouter } from 'next/router';
 
 
+
 const Cont = styled.div`
   display:flex;
   flex-direction:column;
@@ -135,23 +136,23 @@ const ButtonCont = styled.div`
 
 
 const NowPlaying = ({
-  albumsrc = "../whats-going-on.png",
-  spotifylink = "https://open.spotify.com/album/2v6ANhWhZBUKkg6pJJBs3B?si=FfttYBUDQJm0k0JaC1ftlg&dl_branch=1",
-  preview = "",
-  applemusiclink = "https://music.apple.com/ca/album/whats-going-on/1538081586",
-  onClick = () => { },
+  albumsrc="../whats-going-on.png",
+  spotifylink="https://open.spotify.com/album/2v6ANhWhZBUKkg6pJJBs3B?si=FfttYBUDQJm0k0JaC1ftlg&dl_branch=1",
+  preview="",
+  applemusiclink="https://music.apple.com/ca/album/whats-going-on/1538081586",
+  onClick = () => {},
   playPreview = () => {
-    url = "",
-      playStatus = {},
-      playFromPosition = {},
-      onLoading = {},
-      onPlaying = {},
-      onFinishedPlaying = {}
+    url="",
+    playStatus={},
+    playFromPosition={},
+    onLoading={},
+    onPlaying={},
+    onFinishedPlaying={}
   },
-  albumName = "Album Name",
-  artist = "Artist",
-  year = "Year",
-  genre = "Genre"
+  albumName="Album Name",
+  artist="Artist",
+  year="Year",
+  genre="Genre"
 },
 ) => {
   const router = useRouter();
@@ -161,10 +162,10 @@ const NowPlaying = ({
       <BottomCont className="now-playing">
         <Left className="left">
           <AlbumCont className="album">
-            <Album className="album" src={albumsrc} />
+            <Album className="album" src={albumsrc}/>
           </AlbumCont>
           <RecordCont className="record">
-            <Record className="record" src="./record.svg" />
+            <Record className="record" src="./record.svg"/>
           </RecordCont>
         </Left>
         <Right>
@@ -173,23 +174,23 @@ const NowPlaying = ({
           <Year>{year}</Year>
           <Genre>{genre}</Genre>
           <StarCont className="star-cont">
-            <Star className="stars" color="white" size="40px" strokeWidth="1px" />
-            <Star className="stars" color="white" size="40px" strokeWidth="1px" />
-            <Star className="stars" color="white" size="40px" strokeWidth="1px" />
-            <Star className="stars" color="white" size="40px" strokeWidth="1px" />
-            <Star className="stars" color="white" size="40px" strokeWidth="1px" />
+            <Star className="stars" color="white" size="40px" strokeWidth="1px"/>
+            <Star className="stars" color="white" size="40px" strokeWidth="1px"/>
+            <Star className="stars" color="white" size="40px" strokeWidth="1px"/>
+            <Star className="stars" color="white" size="40px" strokeWidth="1px"/>
+            <Star className="stars" color="white" size="40px" strokeWidth="1px"/>
           </StarCont>
           <IconCont>
-            <A href={spotifylink}><Icon src="./spotify.png" onClick={onClick} /></A>
-            <A><Icon src="./preview.svg" onClick={playPreview} /></A>
-            <A href={applemusiclink}><Icon src="./apple-music.png" onClick={onClick} /></A>
+            <A href={spotifylink}><Icon src="./spotify.png" onClick={onClick}/></A>
+            <A><Icon src="./preview.svg" onClick={playPreview}/></A>
+            <A href={applemusiclink}><Icon src="./apple-music.png" onClick={onClick}/></A>
           </IconCont>
         </Right>
       </BottomCont>
       <ButtonCont className="buttons">
-        <Button backgroundColor="white" color="black" buttonText="filter by genre" />
-        <Button color="white" buttonText="shuffle" />
-        <Button backgroundColor="white" color="black" buttonText="checklist" onClick={() => router.push('/checklist')} />
+        <Button backgroundColor="white" color="black" buttonText="filter by genre"/>
+        <Button color="white" buttonText="shuffle"/>
+        <Button backgroundColor="white" color="black" buttonText="checklist" onClick={() => router.push('/checklist')}/>
       </ButtonCont>
     </Cont>
   );

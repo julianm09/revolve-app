@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { useState } from "react";
 import React from "react";
 
-
 const ButtonUI = styled.div`
 
     display: flex;
@@ -23,16 +22,13 @@ const ButtonUI = styled.div`
 `
 
 export const Button = ({
-    
     color='black',
     backgroundColor='black',
-    buttonText='default',
-    onClick = () => {},
-    
+    buttonText='default'
+    src
 }) => {
-    
     return (
-        <ButtonUI color={color} backgroundColor={backgroundColor} onClick={onClick}>
+        <ButtonUI color={color} backgroundColor={backgroundColor}>
             {buttonText}
         </ButtonUI>
     )

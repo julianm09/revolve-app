@@ -4,6 +4,10 @@ import styled from "styled-components";
 import { useState } from "react";
 import React from "react";
 
+import { useRouter } from 'next/router';
+
+
+
 
 const ButtonUI = styled.div`
 
@@ -22,14 +26,17 @@ const ButtonUI = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
+
+
 export const Button = ({
     
     color='black',
     backgroundColor='black',
     buttonText='default',
     onClick = () => {},
-    
+    {const router = useRouter()
 }) => {
+    
     
     return (
         <ButtonUI color={color} backgroundColor={backgroundColor} onClick={onClick}>

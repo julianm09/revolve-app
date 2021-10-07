@@ -8,6 +8,7 @@ import Button from "@/comps/MainButton";
 import { useRouter } from 'next/router';
 
 
+
 const Cont = styled.div`
   display:flex;
   flex-direction:column;

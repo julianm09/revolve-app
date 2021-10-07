@@ -22,6 +22,8 @@ const ButtonUI = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
+
+
 export const Button = ({
     
     color='black',
@@ -30,6 +32,7 @@ export const Button = ({
     onClick = () => {},
     
 }) => {
+    
     
     return (
         <ButtonUI color={color} backgroundColor={backgroundColor} onClick={onClick}>

@@ -3,6 +3,8 @@ import Image from "next/image";
 import styled from "styled-components";
 import { useState } from "react";
 import React from "react";
+import { useRouter } from 'next/router';
+
 
 
 const ButtonUI = styled.div`
@@ -21,16 +23,19 @@ const ButtonUI = styled.div`
     background-color: ${props=>props.backgroundColor};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
+const router = useRouter()
+
 
 export const Button = ({
     
     color='black',
     backgroundColor='black',
     buttonText='default',
-    onClick = () => {},
+    onClick = () => {
+        router.push('/checklist')
+    },
     
 }) => {
-    
     return (
         <ButtonUI color={color} backgroundColor={backgroundColor} onClick={onClick}>
             {buttonText}
