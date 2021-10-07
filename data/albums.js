@@ -18,7 +18,7 @@ export const albums = [
     spotify: "https://open.spotify.com/album/6GphKx2QAPRoVGWE9D7ou8?si=mH9R9YKATSq6avnzWm_O8A&dl_branch=1",
     apple: "https://music.apple.com/us/album/pet-sounds/1440841241",
     genre: "rock",
-    tracklist: [("Wouldn't It Be Nice", "You Still Believe in Me", "That's Not Me", "Don't Talk (Put Your Head On My Shoulder)", 	"I'm Waiting For The Day", "Let's Go Away For Awhile", "Sloop John B", "God Only Knows", "I Know There's An Answer", "Here Today", "I Just Wasn't Made For These Times", "Pet Sounds", "Caroline, No")],
+    tracklist: ["Wouldn't It Be Nice", "You Still Believe in Me", "That's Not Me", "Don't Talk (Put Your Head On My Shoulder)", 	"I'm Waiting For The Day", "Let's Go Away For Awhile", "Sloop John B", "God Only Knows", "I Know There's An Answer", "Here Today", "I Just Wasn't Made For These Times", "Pet Sounds", "Caroline, No"],
     listened: false,
   },
   {

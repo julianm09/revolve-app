@@ -25,21 +25,22 @@ const Tracks = styled.div`
     flex-direction: row;
     white-space: nowrap;
     align-items: center;
-
+    padding: 10px;
     animation: trackSlide 30s linear infinite;
 
 `
 export default function TracklistUI()
 {
     return (
-        <TrackCont>
-            <Tracks>
-            <div style={{height:'10px',width: '50px', backgroundColor: 'white', margin:'0 10px 0 10px'}}></div>
-            <div style={{height:'10px',width: '50px', backgroundColor: 'white', margin:'0 10px 0 10px'}}></div>
-            <div style={{height:'10px',width: '50px', backgroundColor: 'white', margin:'0 10px 0 10px'}}></div>
-            <div style={{height:'10px',width: '50px', backgroundColor: 'white', margin:'0 10px 0 10px'}}></div>
-            </Tracks>
-         
+        <TrackCont >
+        {albums.map((album) =>{
+            return(
+
+          <Tracks>
+            {albums[1].tracklist}
+          </Tracks>
+            )
+        })}
         </TrackCont>
     );
 
