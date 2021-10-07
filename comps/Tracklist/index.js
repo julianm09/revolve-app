@@ -15,8 +15,8 @@ const TrackCont = styled.div`
     max-height: 50px;
     padding: 0 10px 0 10px;
 
-    color: white;
-    background-color: lightcoral;
+    color: black;
+    background-color: none;
 
     font-weight: 600;
 `
@@ -25,7 +25,7 @@ const Tracks = styled.div`
     flex-direction: row;
     white-space: nowrap;
     align-items: center;
-    padding: 10px;
+    margin: 0 10px;
     animation: trackSlide 30s linear infinite;
 
 `
@@ -33,11 +33,11 @@ export default function TracklistUI()
 {
     return (
         <TrackCont >
-        {albums.map((album) =>{
+        {albums[0].tracklist.map((track) =>{
             return(
 
           <Tracks>
-            {albums[1].tracklist}
+            {track}
           </Tracks>
             )
         })}

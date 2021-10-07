@@ -24,12 +24,15 @@ export default function Home() {
   const router = useRouter();
 
 
+
+
   return ( <Main className="main">
     <Logo display='hidden' onClick={() => router.push('/')}/>
     {/* <TrackLoop/> */}
     <NowPlaying />
   </Main>
     
+
 
   );
 }
