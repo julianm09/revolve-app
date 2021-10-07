@@ -7,7 +7,7 @@ export const albums = [
     spotify: "https://open.spotify.com/album/2v6ANhWhZBUKkg6pJJBs3B?si=_SPrU_43TtqwL7ZBn5G9Eg&dl_branch=1",
     apple: "https://music.apple.com/us/album/whats-going-on/1538081586",
     genre: "soul",
-    tracklist: ("What's Going On",	"What's Happening Brother", "Flyin' High (In the Friendly Sky)", "Save the Children", "God Is Love", "Mercy Mercy Me (The Ecology)", 	"Right On", "Wholy Holy",	"Inner City Blues (Make Me Wanna Holler)"),
+    tracklist: ["What's Going On",	"What's Happening Brother", "Flyin' High (In the Friendly Sky)", "Save the Children", "God Is Love", "Mercy Mercy Me (The Ecology)", 	"Right On", "Wholy Holy",	"Inner City Blues (Make Me Wanna Holler)"],
     listened: true,
   },
   {
@@ -40,7 +40,7 @@ export const albums = [
     spotify: "https://open.spotify.com/album/6YUCc2RiXcEKS9ibuZxjt0?si=1UvdzYwxQu-bKAA0sxRutg&dl_branch=1",
     apple: "https://music.apple.com/us/album/songs-in-the-key-of-life/1440788438",
     genre: "soul",
-    tracklist: ("Love's In Need Of Love Today", "Have A Talk With God", "Village Ghetto Land", "Contusion", "Sir Duke", "I Wish", "Knocks Me Off My Feet", "Pastime Paradise", "Summer Soft", "Ordinary Pain", "Isn't She Lovely", "Joy Inside My Tears", "Black Man", "Ngiculela – Es Una Historia – I Am Singing", "If It's Magic", "As", "Another Star", "Saturn", "Ebony Eyes", "All Day Sucker", "Easy Goin' Evening (My Mama's Call)"),
+    tracklist: ["Love's In Need Of Love Today", "Have A Talk With God", "Village Ghetto Land", "Contusion", "Sir Duke", "I Wish", "Knocks Me Off My Feet", "Pastime Paradise", "Summer Soft", "Ordinary Pain", "Isn't She Lovely", "Joy Inside My Tears", "Black Man", "Ngiculela – Es Una Historia – I Am Singing", "If It's Magic", "As", "Another Star", "Saturn", "Ebony Eyes", "All Day Sucker", "Easy Goin' Evening (My Mama's Call)"],
     listened: false,
   },
   {
