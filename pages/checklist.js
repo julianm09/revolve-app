@@ -24,11 +24,17 @@ const TopUI = styled.div`
 `;
 
 const FilterUI = styled.div`
-  display: flex;
+  display: grid;
   flex-direction: row;
   margin: 0 0 50px 0;
   justify-content: center;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  @media (max-width: 1168px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
 `;
 
 const HeaderUI = styled.div`
@@ -90,7 +96,10 @@ export default function AlbumList() {
         <GenreButton genre={genre} setGenre={setGenre} text="folk" />
         <GenreButton genre={genre} setGenre={setGenre} text="soul" />
         <GenreButton genre={genre} setGenre={setGenre} text="pop" />
-        
+        <GenreButton genre={genre} setGenre={setGenre} text="hip-hop" />
+        <GenreButton genre={genre} setGenre={setGenre} text="punk" />
+        <GenreButton genre={genre} setGenre={setGenre} text="r&b" />
+
       </FilterUI>
 
       <AlbumGrid genre={genre} />
