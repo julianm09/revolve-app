@@ -18,10 +18,10 @@ export const TrackLoop = ({
 }) => {
     return (
       <div id='rssBlock'>
-      <p className="cnnContents">
-          <span className="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
+      <p class="cnnContents">
+          <span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
     {/* <!-- duplicate above, change style to allow continous scroll --> */}
-           <span className="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
+           <span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
          </p>
          </div>
     )
