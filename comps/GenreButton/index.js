@@ -6,7 +6,7 @@ import AlbumGrid from "@/comps/AlbumGrid";
 import { albums } from "@/data/albums";
 
 const ButtonUI = styled.div`
-  width: 100px;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
