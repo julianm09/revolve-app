@@ -221,3 +221,10 @@ a {
     0% {-webkit-transform: translateX(0%);}
       100% {-webkit-transform: translateX(-200%);}
 }
+
+.logo {
+  width:300px;
+
+  max-height:auto;
+  left:-15vw;
+}
