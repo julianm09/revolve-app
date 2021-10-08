@@ -15,7 +15,7 @@ const TrackCont = styled.div`
     max-height: 50px;
     padding: 0 10px 0 10px;
 
-    color: black;
+    color: white;
     background-color: none;
 
     font-weight: 600;
