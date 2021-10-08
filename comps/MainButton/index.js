@@ -10,9 +10,10 @@ const ButtonUI = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 60px;
-    border-radius: 50px;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -22,10 +23,10 @@ const ButtonUI = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
-export const Button = ({
+export const Button = ({ 
     
-    color='black',
-    backgroundColor='black',
+    color='white',
+    backgroundColor='none',
     buttonText='default',
     onClick = () => {},
     
