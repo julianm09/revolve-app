@@ -30,6 +30,7 @@ const LogoText = styled.img`
     width:300px;
     height:auto;
     top:-10px;
+    animation: spin 5s linear infinite;
 `;
 
 const Logo = () => {

@@ -24,8 +24,8 @@ export default function Home() {
 
   return (<Main className="main">
     {/* <Logo onClick={() => router.push('/')}/> */}
-    <TrackLoop/>
-    <NowPlaying />
+    {/* <TrackLoop/>
+    <NowPlaying /> */}
     {/* <Logo /> */}
   </Main>
 
