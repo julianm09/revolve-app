@@ -25,8 +25,8 @@ export default function Home() {
 
 
   return ( <Main className="main">
-    <Logo display='hidden' onClick={() => router.push('/')}/>
-    {/* <TrackLoop/> */}
+    {/* <Logo display='hidden' onClick={() => router.push('/')}/> */}
+    <TracklistUI/>
     <NowPlaying />
   </Main>
     
