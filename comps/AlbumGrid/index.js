@@ -28,6 +28,18 @@ const GridUI = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   grid-gap: 50px;
+
+  @media (max-width: 1268px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1068px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 868px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const AlbumUI = styled.div`
